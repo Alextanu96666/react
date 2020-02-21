@@ -1,0 +1,35 @@
+.this-is-the-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.inner-content-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  
+
+  .the-logo {
+    padding-left: 15px;
+
+    img {
+      padding: 5px;
+      vertical-align: middle;
+    }
+  }
+
+  .the-list-header .the-ul-list ul {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    display: flex;
+    padding-right: 20px;
+    /* text-decoration: none; */
+    list-style: none;
+
+    .list-item {
+      padding-right: 35px;
+    }
+  }
+}

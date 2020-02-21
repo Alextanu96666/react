@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {  useState, useEffect } from 'react';
+    import Header from './components/header/header';
+    import Section from "./components/first_page/firstsection";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    const App = () => {
+const myItems = []
+      const [state, setState ] = useState(myItems);
+      useEffect(()=> {
+        fetch('http://localhost/Wordpress/wordpress/wp-json/wp/v2/pages')
+        .then(res => res.json())
+        .then((data) => {
+          setState({ items: data })
+          console.log(state);
+        })
+      },[])
+      
+      
+        return state.items ? (
+          <div>
+            <Header items={state.items} />
+            <Section items={state.items} />
+            
+          </div>
+        ) : (
+          ""
+        ); 
+      
+    }
+
+    export default App;
+
+
+
+
+    

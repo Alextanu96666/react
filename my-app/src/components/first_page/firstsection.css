@@ -1,0 +1,56 @@
+.Title {
+  font-size: 200%;
+}
+
+.Title h1 {
+  margin: 0;
+  font-weight: 400;
+  color: white;
+}
+
+.little-text > p {
+  color: white;
+  font-size: larger;
+}
+
+.the-buttons {
+  margin-top: 40px;
+}
+
+.the-buttons #the-kontakt-button {
+  margin-right: 25px;
+  font-size: initial;
+  /* font-weight: 100; */
+  font-family: sans-serif 'Roboto';
+  /* background: transparent; */
+  border-radius: 7px;
+  padding: 5px 30px 5px 30px;
+  border: none;
+  width: 120px;
+  height: 40px;
+}
+
+.the-buttons #the-bokning-button {
+  margin-right: 25px;
+  font-size: initial;
+  /* font-weight: 100; */
+  font-family: sans-serif 'Roboto';
+  /* background: transparent; */
+  border-radius: 7px;
+  padding: 5px 30px 5px 30px;
+  border: none;
+  width: 120px;
+  height: 40px;
+}
+
+.content-box {
+  width: 840px;
+  text-align: center;
+  height: 200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -420px;
+  margin-top: -100px;
+}
+/*# sourceMappingURL=firstsection.css.map */
