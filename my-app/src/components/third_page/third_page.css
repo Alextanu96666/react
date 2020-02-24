@@ -1,0 +1,19 @@
+.text-block-third {
+  width: 60%;
+  float: left;
+  height: 100vh;
+  background-color: #559e70;
+}
+
+.inner-text-block-content-third {
+  padding: 50px 50px 0px 50px;
+}
+
+.title-third {
+  color: white;
+}
+
+.text-paragraph {
+  color: white;
+}
+/*# sourceMappingURL=third_page.css.map */

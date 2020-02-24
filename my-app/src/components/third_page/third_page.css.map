@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,OAAO;CAC5B;;AAED,AAAA,+BAA+B,CAAC;EAC5B,OAAO,EAAE,kBAAkB;CAC9B;;AAED,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,eAAe,CAAC;EACb,KAAK,EAAE,KAAK;CACd",
+    "sources": [
+        "third_page.scss"
+    ],
+    "names": [],
+    "file": "third_page.css"
+}

@@ -1,0 +1,31 @@
+.text-block1 {
+  width: 60%;
+  float: left;
+  height: 70vh;
+  background: #559e70;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.this-is-text {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.text-block2 {
+  float: left;
+  width: 40%;
+  height: 70vh;
+  background: #559e70;
+}
+
+.text-inner-content {
+  padding: 50px 50px 0px 50px;
+}
+/*# sourceMappingURL=second_page.css.map */
