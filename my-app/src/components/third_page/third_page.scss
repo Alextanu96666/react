@@ -1,18 +1,22 @@
 .text-block-third {
-    width: 60%;
-    float: left;
-    height: 100vh;
-    background-color: #559e70;
+  width: 60%;
+  float: left;
+  height: 120vh;
+  background-color: #8D9E77;
 }
 
 .inner-text-block-content-third {
-    padding: 50px 50px 0px 50px;
+  padding: 50px 50px 0px 50px;
+  font-family: 'Muli';
+  
 }
 
 .title-third {
-    color: white;
+  color: white;
+  font-family: 'Muli';
+  font-weight: 400;
 }
 
 .text-paragraph {
-   color: white; 
+  color: white;
 }

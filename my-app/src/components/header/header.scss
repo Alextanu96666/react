@@ -13,6 +13,8 @@
 
   .the-logo {
     padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     img {
       padding: 5px;
@@ -20,7 +22,13 @@
     }
   }
 
-  .the-list-header .the-ul-list ul {
+ 
+
+  .the-list-header {
+    display: flex;
+    align-items: center;
+
+  }.the-ul-list ul {
     font-family: "Roboto", sans-serif;
     padding: 0;
     display: flex;
@@ -30,6 +38,15 @@
 
     .list-item {
       padding-right: 35px;
+      font-family: 'Muli';
+      font-weight: 600;
+      color: #3f3f3f;
     }
   }
+    
+}
+
+.svg-inline--fa {
+  font-size: large !important;
+  color: #8D9E77;
 }

@@ -27,6 +27,7 @@ h1{
     border: none;
     width: 120px;
     height: 40px;
+    font-family: 'Muli';
     }
 
     #the-bokning-button {
@@ -40,16 +41,21 @@ h1{
     border: none;
     width: 120px;
     height: 40px;
+    font-family: 'Muli';
     }
 }
 
 .content-box {
-    width: 840px;
+    width: 886px;
     text-align: center;
     height: 200px;
     position: absolute;
     top: 60%;
     left: 50%;
-    margin-left: -420px;
+    margin-left: -443px;
     margin-top: -100px;
+}
+
+.content-box-inner {
+    font-family: 'Muli';
 }

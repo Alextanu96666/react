@@ -1,8 +1,23 @@
+.first-row-fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-block-fourth-1 {
-  width: 60%;
+  width: 55%;
   float: left;
   height: 50vh;
-  background: #559e70;
+  background: #8d9e77;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.second_row-fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-fourth {
@@ -20,11 +35,15 @@
 
 .text-block-fourth-2 {
   float: left;
-  width: 40%;
+  width: 45%;
   height: 50vh;
-  background: #559e70;
+  background: #8d9e77;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .text-inner-content-fourth {
-  padding: 50px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
+  font-family: "Muli";
 }

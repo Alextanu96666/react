@@ -17,6 +17,8 @@
 
 .inner-content-header .the-logo {
   padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .inner-content-header .the-logo img {
@@ -24,7 +26,16 @@
   vertical-align: middle;
 }
 
-.inner-content-header .the-list-header .the-ul-list ul {
+.inner-content-header .the-list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner-content-header .the-ul-list ul {
   font-family: "Roboto", sans-serif;
   padding: 0;
   display: -webkit-box;
@@ -35,7 +46,15 @@
   list-style: none;
 }
 
-.inner-content-header .the-list-header .the-ul-list ul .list-item {
+.inner-content-header .the-ul-list ul .list-item {
   padding-right: 35px;
+  font-family: 'Muli';
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.svg-inline--fa {
+  font-size: large !important;
+  color: #8D9E77;
 }
 /*# sourceMappingURL=header.css.map */

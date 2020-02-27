@@ -1,5 +1,5 @@
 import React from "react";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './header.css';
 
@@ -46,7 +46,7 @@ const Header = ({ items }) => {
                       </li>
                       <li className="icon list-item">
                         <label htmlFor="icon-field">
-                          <FontAwesomeIcon icon={faHome} />
+                          <FontAwesomeIcon icon={faFacebook} />
                         </label>
                       </li>
                     </ul>
