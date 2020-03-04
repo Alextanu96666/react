@@ -1,7 +1,8 @@
 .first-row-fifth {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  //  align-items: center;
+  min-height: 70vh;
 }
 
 .text-block1-fifth {
@@ -9,17 +10,16 @@
   float: left;
   height: 70vh;
   justify-content: center;
-    align-items: center;
-    display: flex;
-  
+  align-items: center;
+  display: flex;
 }
 
 .title-1-fifth {
-    color: black !important;
+  color: black !important;
 }
 
 .text-1-fifth {
-    color: black !important;
+  color: black !important;
 }
 
 .title-fifth {
@@ -33,27 +33,28 @@
   color: white;
   font-weight: 400;
   margin-top: 30px;
-} 
+}
 
 .second_row-fifth {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  //  align-items: center;
+  min-height: 70vh;
 }
 
 .text-block2-fifth {
   float: left;
   width: 45%;
-  height: 90vh;
-  background: #8D9E77;
+  min-height: 90vh;
+  background: #8d9e77;
   justify-content: center;
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
 
 .text-inner-content-fifth {
-  padding: 0px 50px 0px 50px;
-  font-family: 'Muli'; 
+  padding: 50px 50px 50px 50px;
+  font-family: "Muli";
 }
 
 .fifth-list {
@@ -62,4 +63,57 @@
 
 .text-fifth-section {
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-row-fifth {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+
+    .text-block1-fifth {
+      width: 70%;
+      float: left;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .img-block-fifth1 {
+      min-height: 50vh !important;
+      width: 45%;
+    }
+  }
+
+  .second_row-fifth {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    .img-block-fifth2 {
+      display: none !important;
+    }
+    .text-block2-fifth {
+      float: left;
+      width: 100%;
+      min-height: 50vh;
+      background: #8d9e77;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first-row-fifth .text-block1-fifth {
+    width: 100%;
+    float: left;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.img-block-fifth1 {
+      display: none;
+    }
 }

@@ -1,13 +1,14 @@
 .first-row {
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
+  min-height: 50vh;
 }
 
 .text-block1 {
   width: 55%;
   // float: left;
-  height: 85vh;
+  min-height: 50vh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -54,13 +55,14 @@
 .second_row {
   display: flex;
   justify-content: center;
-  align-items: center;
+  //  align-items: center;
+  min-height: 50vh;
 }
 
 .text-block2 {
   float: left;
   width: 45%;
-  height: 85vh;
+  min-height: 50vh;
 
   justify-content: center;
   align-items: center;
@@ -68,6 +70,79 @@
 }
 
 .text-inner-content {
-  padding: 0px 50px 0px 50px;
+  padding: 50px 50px 50px 50px;
   font-family: "Muli";
+}
+
+@media screen and (max-width: 1024px) {
+  .first-row {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    .text-block1 {
+      width: 100%;
+      min-height: 50vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: #8d9e77;
+    }
+    .img-block1 {
+      display: none !important;
+    }
+  }
+
+  .second_row {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    .img-block2 {
+      min-height: 50vh !important;
+      width: 30% !important;
+    }
+    .text-block2 {
+      float: left;
+      width: 70%;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+.img-block2 {
+      display: none;
+    }
+
+    .img-block1 {
+      display: none;
+    }
+
+    .first-row .text-block1 {
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #8d9e77;
+    .text-inner-content {
+      padding: 50px;
+    }
+}
+.second_row .text-block2 {
+    float: left;
+    width: 100%;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .text-inner-content {
+      padding: 20px;
+    }
+
+    .title-3 {font-size: 165%;}
+}
 }

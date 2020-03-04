@@ -1,61 +1,106 @@
 .Title {
+  font-size: 200%;
 
-font-size: 200%;
-
-h1{
+  h1 {
     margin: 0;
     font-weight: 400;
     color: white;
-}
+  }
 }
 .little-text > p {
-    color: white;
-    font-size: x-large;
+  color: white;
+  font-size: x-large;
 }
 
 .the-buttons {
-    margin-top: 40px;
+  margin-top: 40px;
 
-    #the-kontakt-button {
-        margin-right: 25px;
+  #the-kontakt-button {
+    margin-right: 25px;
     font-size: initial;
     /* font-weight: 100; */
-    font-family: sans-serif 'Roboto';
+    font-family: sans-serif "Roboto";
     /* background: transparent; */
     border-radius: 7px;
     padding: 5px 30px 5px 30px;
     border: none;
     width: 120px;
     height: 40px;
-    font-family: 'Muli';
-    }
+    font-family: "Muli";
+  }
 
-    #the-bokning-button {
-        margin-right: 25px;
+  #the-bokning-button {
+    margin-right: 25px;
     font-size: initial;
     /* font-weight: 100; */
-    font-family: sans-serif 'Roboto';
+    font-family: sans-serif "Roboto";
     /* background: transparent; */
     border-radius: 7px;
     padding: 5px 30px 5px 30px;
     border: none;
     width: 120px;
     height: 40px;
-    font-family: 'Muli';
-    }
+    font-family: "Muli";
+  }
 }
 
 .content-box {
-    width: 886px;
-    text-align: center;
-    height: 200px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-left: -443px;
-    margin-top: -100px;
+  width: 886px;
+  text-align: center;
+  height: 200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -443px;
+  margin-top: -100px;
 }
 
 .content-box-inner {
-    font-family: 'Muli';
+  font-family: "Muli";
+}
+
+@media screen and (max-width: 1024px) {
+  .my-first-section {
+    height: 50vh !important;
+    .content-box {
+      width: 630px;
+      text-align: center;
+      height: 200px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-left: -315px;
+      margin-top: -100px;
+      .Title {
+        font-size: 145%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .my-first-section {
+    height: 35em !important;
+     #the-bokning-button {
+       margin-right: 0;
+     }
+
+    .content-box {
+      width: 300px;
+      text-align: center;
+      height: 200px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-left: -150px;
+      margin-top: -75px;
+
+      .Title {
+        font-size: 80%;
+      }
+      .little-text > p {
+        font-size: small;
+      }
+    }
+  }
 }

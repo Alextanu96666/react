@@ -6,9 +6,10 @@ const Section = ({ items }) => {
   console.log(items[0].acf.backgroundImage.url);
   const style = {
     backgroundImage: "url(" + items[0].acf.backgroundImage.url + ")",
-    height: "120vh",
+    height: "100vh",
     position: "relative",
-    backgroundSize: "cover"
+    backgroundSize: "cover",
+    backgroundPosition: "center"
   };
 
   return items.map(myvariable =>

@@ -5,9 +5,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-height: 70vh;
 }
 
 .text-block1-fifth {
@@ -53,16 +51,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-height: 70vh;
 }
 
 .text-block2-fifth {
   float: left;
   width: 45%;
-  height: 90vh;
-  background: #8D9E77;
+  min-height: 90vh;
+  background: #8d9e77;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -75,8 +71,8 @@
 }
 
 .text-inner-content-fifth {
-  padding: 0px 50px 0px 50px;
-  font-family: 'Muli';
+  padding: 50px 50px 50px 50px;
+  font-family: "Muli";
 }
 
 .fifth-list {
@@ -85,5 +81,82 @@
 
 .text-fifth-section {
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .first-row-fifth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 50vh;
+  }
+  .first-row-fifth .text-block1-fifth {
+    width: 70%;
+    float: left;
+    height: 50vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .first-row-fifth .img-block-fifth1 {
+    min-height: 50vh !important;
+    width: 45%;
+  }
+  .second_row-fifth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 50vh;
+  }
+  .second_row-fifth .img-block-fifth2 {
+    display: none !important;
+  }
+  .second_row-fifth .text-block2-fifth {
+    float: left;
+    width: 100%;
+    min-height: 50vh;
+    background: #8d9e77;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first-row-fifth .text-block1-fifth {
+    width: 100%;
+    float: left;
+    height: 70vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img-block-fifth1 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=fifth_page.css.map */

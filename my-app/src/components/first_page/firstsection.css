@@ -21,28 +21,28 @@
   margin-right: 25px;
   font-size: initial;
   /* font-weight: 100; */
-  font-family: sans-serif 'Roboto';
+  font-family: sans-serif "Roboto";
   /* background: transparent; */
   border-radius: 7px;
   padding: 5px 30px 5px 30px;
   border: none;
   width: 120px;
   height: 40px;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 
 .the-buttons #the-bokning-button {
   margin-right: 25px;
   font-size: initial;
   /* font-weight: 100; */
-  font-family: sans-serif 'Roboto';
+  font-family: sans-serif "Roboto";
   /* background: transparent; */
   border-radius: 7px;
   padding: 5px 30px 5px 30px;
   border: none;
   width: 120px;
   height: 40px;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 
 .content-box {
@@ -57,6 +57,50 @@
 }
 
 .content-box-inner {
-  font-family: 'Muli';
+  font-family: "Muli";
+}
+
+@media screen and (max-width: 1024px) {
+  .my-first-section {
+    height: 50vh !important;
+  }
+  .my-first-section .content-box {
+    width: 630px;
+    text-align: center;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -315px;
+    margin-top: -100px;
+  }
+  .my-first-section .content-box .Title {
+    font-size: 145%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .my-first-section {
+    height: 35em !important;
+  }
+  .my-first-section #the-bokning-button {
+    margin-right: 0;
+  }
+  .my-first-section .content-box {
+    width: 300px;
+    text-align: center;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -75px;
+  }
+  .my-first-section .content-box .Title {
+    font-size: 80%;
+  }
+  .my-first-section .content-box .little-text > p {
+    font-size: small;
+  }
 }
 /*# sourceMappingURL=firstsection.css.map */
