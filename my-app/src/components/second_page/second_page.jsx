@@ -28,10 +28,11 @@ const Section2 = ({ items }) => {
       <div className="my-second-page" >
         {items.map(myvariable =>
           myvariable.acf.second_page.map((flexible, index) => {
-            console.log(flexible);
+            
             return (
-              <React.Fragment>
-                <div className="first-row" key={index} id="second-section-top">
+              <React.Fragment key= {index}>
+                
+                <div className="first-row"  id="second-section-psykoterapi" >
                   <div className="text-block1 text-block">
                     <div className="text-inner-content">
                       <h1 className="title-1 title">
@@ -40,7 +41,7 @@ const Section2 = ({ items }) => {
                       <p className="text-1 this-is-text">
                         {flexible.second_page_text_1}
                       </p>
-                      <h1 className="title-2 title">
+                      <h1 className="title-2 title" id="second-section-handledning">
                         {flexible.second_page_title_2}
                       </h1>
                       <p className="text-2 this-is-text">
@@ -51,11 +52,11 @@ const Section2 = ({ items }) => {
                   </div>
                   <div className="img-block1" style={style1}></div>
                 </div>
-                <div className="second_row" id="second-section-bottom">
+                <div className="second_row"  >
                   <div className="img-block2" style={style2}></div>
                   <div className="text-block2 text-block">
                     <div className="text-inner-content">
-                      <h1 className="title-3 title">
+                      <h1 className="title-3 title" id="second-section-utbildning">
                         {flexible.second_page_title_3}
                       </h1>
                       <p className="text-3 this-is-text">
@@ -73,6 +74,7 @@ const Section2 = ({ items }) => {
                     </div>
                   </div>
                 </div>
+                
               </React.Fragment>
             );
           })

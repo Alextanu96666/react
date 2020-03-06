@@ -1,9 +1,12 @@
 import React from "react";
 import "./firstsection.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Section = ({ items }) => {
-  console.log(items);
-  console.log(items[0].acf.backgroundImage.url);
+  const hidePhone = () => {
+    let btn = document.getElementById("the-bokning-button");
+    btn.innerHTML = "Ring Oss";
+  };
   const style = {
     backgroundImage: "url(" + items[0].acf.backgroundImage.url + ")",
     height: "100vh",
@@ -11,9 +14,15 @@ const Section = ({ items }) => {
     backgroundSize: "cover",
     backgroundPosition: "center"
   };
-
+  
   return items.map(myvariable =>
     myvariable.acf.firstsectiontext.map((content, index) => {
+      const phone = "tel://" + content.phone_number 
+      
+      const showPhone = () => {
+        let btn = document.getElementById("the-bokning-button");
+        btn.innerHTML = content.phone_number;
+      };
       return (
         <div className="my-first-section" key={index} style={style}>
           <div className="overlay">
@@ -26,8 +35,16 @@ const Section = ({ items }) => {
                   <p> {content.little_text}</p>
                 </div>
                 <div className="the-buttons">
-                  <button id="the-kontakt-button">{content.button1}</button>
-                  <button id="the-bokning-button">{content.button2}</button>
+                  <Link to="/kontakt#top" id="the-kontakt-button">
+                    {content.button1}
+                  </Link>
+                  <a
+                    href={phone}
+                    id="the-bokning-button"
+                    
+                  >
+                    Ring Oss
+                  </a>
                 </div>
               </div>
             </div>

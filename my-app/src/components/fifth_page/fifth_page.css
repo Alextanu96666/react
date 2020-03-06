@@ -6,6 +6,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 70vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text-block1-fifth {
@@ -91,12 +94,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 50vh;
+    min-height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .first-row-fifth .text-block1-fifth {
     width: 70%;
     float: left;
-    height: 50vh;
+    height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -110,6 +116,7 @@
   .first-row-fifth .img-block-fifth1 {
     min-height: 50vh !important;
     width: 45%;
+    background-position: center;
   }
   .second_row-fifth {
     display: -webkit-box;
@@ -121,7 +128,7 @@
     min-height: 50vh;
   }
   .second_row-fifth .img-block-fifth2 {
-    display: none !important;
+    display: none;
   }
   .second_row-fifth .text-block2-fifth {
     float: left;
@@ -140,11 +147,21 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
+  .fifth-list {
+    color: white;
+    font-size: larger;
+  }
+  .text-fifth-section {
+    font-size: larger !important;
+  }
+  .this-is-text-fifth {
+    font-size: larger !important;
+  }
   .first-row-fifth .text-block1-fifth {
     width: 100%;
     float: left;
-    height: 70vh;
+    height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -157,6 +174,24 @@
   }
   .img-block-fifth1 {
     display: none;
+  }
+  .second_row-fifth {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .second_row-fifth .img-block-fifth2 {
+    width: 100% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    min-height: 50vh !important;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .text-block1-fifth {
+    height: 135vh !important;
   }
 }
 /*# sourceMappingURL=fifth_page.css.map */

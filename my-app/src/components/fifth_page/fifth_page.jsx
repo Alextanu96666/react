@@ -25,10 +25,10 @@ const Section5 = ({ items }) => {
             <div className="my-fifth-page">
                 {items.map(myvariable =>
                     myvariable.acf.fifth_section.map((flexible, index) => {
-                        console.log(flexible);
+                        
                         return (
-                            <React.Fragment>
-                                <div className="first-row-fifth" key={index} id = "oppenvard">
+                            <React.Fragment key={index}>
+                                <div className="first-row-fifth"  id = "oppenvard">
                                     <div className="text-block1-fifth text-block-fifth">
                                         <div className="text-inner-content-fifth">
                                             <h1 className="title-1-fifth title-fifth">
@@ -69,6 +69,8 @@ const Section5 = ({ items }) => {
                                         </div>
                                     </div>
                                 </div>
+
+                                
                             </React.Fragment>
                         );
                     })

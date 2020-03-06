@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 400;
   }
 }
 
@@ -66,13 +67,66 @@
 .inner-content-full {
   padding: 80px;
   color: white;
+  text-align: center;
 }
 
 .second-flex-wrapper {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+
+.third_row {
+  display: flex;
+  .the-title {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #8d9e77;
+    h1 {
+      display: flex;
+    color: white;
+    font-family: 'Muli';
+    }
+  }
+
+  .the-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #8d9e77;
+    .fields {
+
+      h2 {
+        color: white;
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 0;
+      }
+          font-family: 'Muli';
+    
+    width: 65%;
+    padding: 40px;
+    margin: 30px 0px 30px 0px;
+    border-radius: 10px;
+    background-color: #7a8869;
+
+    .inputfield {
+      width: 100%;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .inner-content-full {
+  padding: 80px;
+  color: white;
+  font-size: larger;
+}
   .full-width-div {
     display: flex;
     min-height: 20vh;
@@ -91,7 +145,12 @@
     .inner-text-block-content-third {
       padding: 50px;
       font-family: "Muli";
+      font-size: larger;
     }
+  }
+
+  .kontakterna {
+    font-size: larger;
   }
 
   .right-kontakt {

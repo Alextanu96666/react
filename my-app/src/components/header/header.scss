@@ -1,9 +1,29 @@
 html {
   scroll-behavior: smooth;
+   scroll-padding-top: 90px;
+}
+
+.links-container {
+  display: flex;
+}
+
+.my-x {
+  display: block;
+    float: right;
+    font-size: xx-large;
+    /* justify-content: right; */
+    align-items: right;
+    margin-right: 17px;
+    margin-top: 9px;
+    color: #8d9e77;
 }
 
 .hidden {
   display: none!important;
+}
+
+.bars-icon-mine {
+  display: none;
 }
 
 .bars-icon {
@@ -82,7 +102,25 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
+
+.bars-icon-mine {
+  display: flex;
+    height: 27px;
+    width: 33px;
+    float: right;
+    /* padding: 20px; */
+    flex-wrap: wrap;
+    margin-top: 21px;
+    margin-right: 23px;
+    .bars {
+          width: 100%;
+    height: 3px;
+    background: #8d9e77;
+    }
+}
+
+  
   .this-is-the-header {
     position: fixed;
     width: 100%;
@@ -106,10 +144,11 @@ html {
       }
     }
   }
-  #root > div > div.this-is-the-header.header-container > div > svg {
+  .bars-icon {
+    
     float: right;
     padding: 21px;
-    display: block!important;
+    display: none!important;
     font-size: x-large!important;
   }
 
@@ -120,21 +159,37 @@ html {
   .inner-content-header .the-ul-list ul {
     font-family: "Roboto", sans-serif;
     padding: 0;
-    display: block;
-    padding: 20px;
-
+    display: flex;
+    /* padding: 20px; */
     list-style: none;
-
     margin: 0;
     float: left;
     width: 100%;
+    justify-content: center;
+    height: 100vh;
+    
   }
 
   .inner-content-header .the-ul-list ul .list-item {
-    padding-right: 20px;
+    padding-right: 0px;
     font-family: "Muli";
     font-weight: 600;
     color: #3f3f3f;
     padding-top: 16px;
   }
+
+  .links-container {
+  display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    height: 45vh;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 115px;
+
+    a {
+      width: 100%;
+    }
+   
+}
 }

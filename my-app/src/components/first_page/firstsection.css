@@ -24,25 +24,49 @@
   font-family: sans-serif "Roboto";
   /* background: transparent; */
   border-radius: 7px;
-  padding: 5px 30px 5px 30px;
+  padding: 10px 30px 10px 30px;
   border: none;
   width: 120px;
   height: 40px;
   font-family: "Muli";
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f0f0f0), color-stop(50%, #8d9e77));
+  background-image: linear-gradient(to bottom, #f0f0f0 50%, #8d9e77 50%);
+  -webkit-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+  text-decoration: none;
+  color: black;
+}
+
+.the-buttons #the-kontakt-button:hover {
+  background-position: 0 -100%;
+  color: white;
 }
 
 .the-buttons #the-bokning-button {
-  margin-right: 25px;
+  /* margin-right: 25px; */
   font-size: initial;
   /* font-weight: 100; */
   font-family: sans-serif "Roboto";
   /* background: transparent; */
   border-radius: 7px;
-  padding: 5px 30px 5px 30px;
+  padding: 10px 30px 10px 30px;
   border: none;
   width: 120px;
   height: 40px;
   font-family: "Muli";
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f0f0f0), color-stop(50%, #8d9e77));
+  background-image: linear-gradient(to bottom, #f0f0f0 50%, #8d9e77 50%);
+  -webkit-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+  text-decoration: none;
+  color: black;
+}
+
+.the-buttons #the-bokning-button:hover {
+  background-position: 0 -100%;
+  color: white;
 }
 
 .content-box {
@@ -79,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .my-first-section {
     height: 35em !important;
   }
@@ -87,20 +111,39 @@
     margin-right: 0;
   }
   .my-first-section .content-box {
-    width: 300px;
+    width: 345px;
     text-align: center;
     height: 200px;
     position: absolute;
     top: 60%;
     left: 50%;
-    margin-left: -150px;
-    margin-top: -75px;
+    margin-left: -175px;
+    margin-top: -100px;
   }
   .my-first-section .content-box .Title {
-    font-size: 80%;
+    font-size: 100%;
   }
   .my-first-section .content-box .little-text > p {
-    font-size: small;
+    font-size: larger;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .my-first-section {
+    height: 36em !important;
+  }
+  .content-box {
+    width: 300px !important;
+    text-align: center;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -150px !important;
+    margin-top: -100px;
+  }
+  .content-box .Title {
+    font-size: 80% !important;
   }
 }
 /*# sourceMappingURL=firstsection.css.map */
