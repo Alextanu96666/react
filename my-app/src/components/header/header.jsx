@@ -1,19 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HashLink as Link } from "react-router-hash-link";
 
 import "./header.css";
 
-const Header = ({ items }) => {
-  useEffect(() => {
-    window.innerWidth < 600
-      ? document.getElementById("ul-list").classList.add("hidden")
-      : console.log("");
+/**
+ * Get the window size as a react hook.
+ */
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
+  return size;
+}
+
+const Header = ({ items }) => {
+  let breakpoint = 767;
+  const [width, height] = useWindowSize();
+
+  const [open, setOpen] = useState(false);
 
   const menufunction = () => {
-    if (window.innerWidth < 600) {
+    /*if (width < 600) {
 
       document
          .getElementById("ul-list")
@@ -25,38 +40,36 @@ const Header = ({ items }) => {
            .getElementById("my-x")
            .classList.toggle("hidden")
     }
-      
-    } 
+      */
+  };
 
   return (
     <div className="this-is-the-header header-container">
       <div className="inner-content-header">
         <div className="the-logo" id="the-logo">
           <div className="the-logo-inner-content">
-            <Link to = "/">
-            <img src={items[0].acf.items[0].bild.url}></img>
+            <Link to="/">
+              <img src={items[0].acf.items[0].bild.url}></img>
             </Link>
           </div>
         </div>
         <div
-          className="my-x hidden"
+          className={`my-x ${width >= breakpoint || !open ? "hidden" : ""}`}
           id="my-x"
           onClick={() => {
-            document.getElementById("my-x").classList.toggle("hidden");
-            document.getElementById("hamburger").classList.toggle("hidden");
-            document.getElementById("ul-list").classList.toggle("hidden");
+            setOpen(false);
           }}
         >
           &#x2715;
         </div>
 
         <div
-          className="bars-icon-mine"
+          className={`bars-icon-mine ${
+            width >= breakpoint || open ? "hidden" : ""
+          }`}
           id="hamburger"
           onClick={() => {
-            document.getElementById("ul-list").classList.toggle("hidden");
-            document.getElementById("hamburger").classList.toggle("hidden");
-            document.getElementById("my-x").classList.toggle("hidden");
+            setOpen(true);
           }}
         >
           <div className="first-bar bars" id="first"></div>
@@ -78,11 +91,18 @@ const Header = ({ items }) => {
             myconst.acf.items.map((mytext, index) => {
               return (
                 <div key={index} className="the-ul-list">
-                  <ul className="this-is-ul" id="ul-list">
+                  <ul
+                    className={`this-is-ul ${
+                      width < breakpoint && !open ? "hidden" : ""
+                    }`}
+                    id="ul-list"
+                  >
                     <div className="links-container">
                       <Link
                         to="/#second-section-psykoterapi"
-                        onClick={menufunction}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                       >
                         <li className="first-child-text list-item">
                           {mytext.menu_text_first_child}
@@ -91,7 +111,9 @@ const Header = ({ items }) => {
 
                       <Link
                         to="/#second-section-radgivning"
-                        onClick={menufunction}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                       >
                         <li className="second-child-text list-item">
                           {mytext.menu_text_second_child}
@@ -100,7 +122,9 @@ const Header = ({ items }) => {
 
                       <Link
                         to="/#second-section-handledning"
-                        onClick={menufunction}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                       >
                         <li className="third-child-text list-item">
                           {mytext.menu_text_third_child}
@@ -109,7 +133,9 @@ const Header = ({ items }) => {
 
                       <Link
                         to="/#second-section-utbildning"
-                        onClick={menufunction}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                       >
                         <li className="fourth-child-text list-item">
                           {mytext.menu_text_fourth_child}
@@ -118,7 +144,9 @@ const Header = ({ items }) => {
 
                       <Link
                         to="/#oppenvard"
-                        onClick={menufunction}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                       >
                         <li className="fifth-child-text list-item">
                           {mytext.menu_text_fifth_child}
@@ -127,7 +155,9 @@ const Header = ({ items }) => {
 
                       <Link
                         to="/kontakt#top"
-                        onClick={menufunction}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                       >
                         <li className="last-child-text list-item">
                           {mytext.kontakt}

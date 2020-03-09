@@ -78,10 +78,10 @@
   .first-row {
     display: flex;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 100%;
     .text-block1 {
       width: 100%;
-      min-height: 50vh;
+      min-height: 100%;
       justify-content: center;
       align-items: center;
       display: flex;
@@ -95,15 +95,15 @@
   .second_row {
     display: flex;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 100%;
     .img-block2 {
-      min-height: 50vh !important;
+      min-height: 100% !important;
       width: 30%;
     }
     .text-block2 {
       float: left;
       width: 70%;
-      height: 50vh;
+      height: 100%;
       justify-content: center;
       align-items: center;
       display: flex;

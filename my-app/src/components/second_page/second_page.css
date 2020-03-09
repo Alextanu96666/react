@@ -98,11 +98,11 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 50vh;
+    min-height: 100%;
   }
   .first-row .text-block1 {
     width: 100%;
-    min-height: 50vh;
+    min-height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -124,16 +124,16 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 50vh;
+    min-height: 100%;
   }
   .second_row .img-block2 {
-    min-height: 50vh !important;
+    min-height: 100% !important;
     width: 30%;
   }
   .second_row .text-block2 {
     float: left;
     width: 70%;
-    height: 50vh;
+    height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

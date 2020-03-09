@@ -115,6 +115,7 @@
   }
   .first-row-fifth .img-block-fifth1 {
     min-height: 50vh !important;
+    height: 100%;
     width: 45%;
     background-position: center;
   }
